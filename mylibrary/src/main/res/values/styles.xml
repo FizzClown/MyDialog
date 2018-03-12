@@ -1,0 +1,38 @@
+<resources>
+    <style name="dialogTransparent" parent="@android:style/Theme.Dialog">
+        <!-- 更换背景图片实现全透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="ImageTranslucentTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="dialogMatchParent" parent="@android:style/Theme.Dialog">
+        <!-- 更换背景图片实现全透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!-- 设置dialog弹出，退出动画 -->
+    <style name="dialogWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@animator/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@animator/dialog_exit_anim</item>
+    </style>
+
+    <!-- 设置dialog弹出，从左侧放大 -->
+    <style name="dialogFromLeft" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@animator/dialog_enter_left_anim</item>
+        <item name="android:windowExitAnimation">@animator/dialog_exit_left_anim</item>
+    </style>
+
+    <!-- 设置dialog弹出，从底部放大 -->
+    <style name="dialogFromBottom" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@animator/dialog_enter_bottom_anim</item>
+        <item name="android:windowExitAnimation">@animator/dialog_exit_bottom_anim</item>
+    </style>
+
+    <!--dialog透明背景样式-->
+    <style name="dialog" parent="Theme.AppCompat.Light.Dialog.Alert"/>
+</resources>

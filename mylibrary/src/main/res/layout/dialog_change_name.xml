@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="@drawable/bg_choose_reason"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dialog_tip"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="@color/six"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_new_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_search_home"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="@string/input"
+        android:maxLines="1"
+        android:textColorHint="@color/nine"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/bt_ensure_new_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_ensure"
+        android:text="@string/ensure"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</LinearLayout>
